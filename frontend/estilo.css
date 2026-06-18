@@ -16,6 +16,7 @@
 
 body{
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 div.pai-roleta{
@@ -84,7 +85,7 @@ div.roleta-exercicios{
     justify-content: start;
 }
 .btn-girar{
-    margin-top: 10px;
+    margin: 10px 10px;
     padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
