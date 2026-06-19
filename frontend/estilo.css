@@ -105,6 +105,7 @@ div.roleta-exercicios{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 /* Botão para mudar o tema para escuro */
@@ -136,6 +137,6 @@ div.roleta-exercicios{
 }
 
 .light {
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
-
