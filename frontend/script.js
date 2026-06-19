@@ -18,6 +18,8 @@ const trocarTema = () => {
     const body = document.body
     const btn_dark = document.getElementById("btn-dark")
     const btn_light = document.getElementById("btn-light")
+    const btn_girar = document.getElementById("btn-girar")
+    const ponteiro = document.getElementById("ponteiro")
 
     
     if (getComputedStyle(body).backgroundColor === "rgb(255, 255, 255)") {
@@ -31,6 +33,9 @@ const trocarTema = () => {
         btn_light.classList.remove("display-none")
         btn_dark.classList.add("display-inline-block")
 
+        btn_girar.classList.add("light")
+
+        ponteiro.classList.add("ponteiro-light")
 
     } else {
 
@@ -42,6 +47,11 @@ const trocarTema = () => {
 
         btn_light.classList.add("display-none")
         btn_light.classList.remove("display-inline-block")
+
+        btn_girar.classList.remove("light")
+
+        ponteiro.classList.remove("ponteiro-light")
+
     }
 }
 

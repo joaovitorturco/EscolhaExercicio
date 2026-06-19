@@ -29,7 +29,7 @@ div.container-roleta{
     position: relative;
 }
 
-#ponteiro{
+.ponteiro{
     position: absolute;
     top: -20px;
     left: 50%;
@@ -89,6 +89,7 @@ div.roleta-exercicios{
 .container-header   {
     display: flex;
 }
+
 .btn-girar{
     margin: 10px 10px;
     padding: 12px 24px;
@@ -139,4 +140,10 @@ div.roleta-exercicios{
 .light {
     background-color: white;
     color: rgb(0, 0, 0);
+}
+
+.ponteiro-light{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid rgb(255, 255, 255);
 }
