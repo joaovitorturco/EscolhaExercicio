@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 786px) {
-    .container-btn-girar{
+@media (min-width: 386px) {
+    .container-btn{
         justify-content: center !important;
     }
     .roleta-exercicios{
-        height: 200px !important;
-        width: 200px !important;
+        height: 350px !important;
+        width: 350px !important;
     }
 }
 
@@ -28,7 +28,8 @@ div.pai-roleta{
 div.container-roleta{
     position: relative;
 }
-.ponteiro{
+
+#ponteiro{
     position: absolute;
     top: -20px;
     left: 50%;
@@ -38,11 +39,15 @@ div.container-roleta{
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 25px solid rgb(0, 0, 0);
+    z-index: 1;
 }
 
 div.roleta-exercicios{
     height: 500px;
     width: 500px;
+    border: 8px solid #ff2d2d;
+    box-shadow: 0 0 15px #ff2d2d;       
+    z-index: 0;
     border-radius: 50%;
         background: conic-gradient(
         rgb(255, 0, 0) 0deg 90deg,
@@ -51,6 +56,7 @@ div.roleta-exercicios{
         rgb(0, 0, 0) 270deg 360deg
     ); 
     transition: transform 4s ease-out;
+
 }
 
 /* texto base */
@@ -80,9 +86,8 @@ div.roleta-exercicios{
 .t4 {
     transform: rotate(270deg) translate(120px) rotate(-270deg);
 }
-.container-btn-girar{
+.container-header   {
     display: flex;
-    justify-content: start;
 }
 .btn-girar{
     margin: 10px 10px;
@@ -94,3 +99,43 @@ div.roleta-exercicios{
     background-color: red;
     color: white;
 }
+
+/* Botão para mudar o tema para claro */
+.btn-light{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botão para mudar o tema para escuro */
+.btn-dark{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container-theme{       
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin: 10px 40px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.light {
+    color: white;
+}
+
